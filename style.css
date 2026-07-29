@@ -22,10 +22,44 @@ html{
 }
 
 body{
-    background:#FFF8F2;
-    color:#5B4A4A;
-    overflow-x:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    background-color:#fcfbff;
+
+    background-image:
+
+    /* Grid */
+    linear-gradient(rgba(180,190,255,.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180,190,255,.10) 1px, transparent 1px),
+
+    /* Glow Biru */
+    radial-gradient(circle at top right,
+    rgba(170,190,255,.28),
+    transparent 38%),
+
+    /* Glow Pink */
+    radial-gradient(circle at bottom left,
+    rgba(255,190,225,.22),
+    transparent 40%),
+
+    /* Glow Putih */
+    radial-gradient(circle at center,
+    rgba(255,255,255,.65),
+    transparent 55%);
+
+    background-size:
+    72px 72px,
+    72px 72px,
+    auto,
+    auto,
+    auto;
+
+    background-attachment:fixed;
+
 }
+
+
 
 img{
     display:block;
@@ -94,9 +128,24 @@ section{
    NAVBAR
 ========================================================== */
 
+@media(max-width:768px){
+
 .navbar{
-    display:flex;
-    gap:3rem;
+
+display:flex;
+
+position:static;
+
+background:transparent;
+
+box-shadow:none;
+
+padding:0;
+
+gap:18px;
+
+}
+
 }
 
 .navbar a{
@@ -2549,3 +2598,61 @@ img{
     gap:15px;
 }
 
+@media(max-width:768px){
+
+.project-card .overlay{
+
+    opacity:1;
+
+    background:rgba(0,0,0,.35);
+
+}
+
+.overlay h3,
+.overlay p,
+.overlay a{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+}
+
+@media (max-width:768px){
+
+    .skills-section{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .tools-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:15px;
+    }
+
+}
+
+@media (max-width:768px){
+
+.tool i{
+    width:50px;
+    height:50px;
+    font-size:26px;
+}
+
+.tool img{
+    width:36px;
+    height:36px;
+}
+
+.tool span{
+    font-size:12px;
+}
+
+}
