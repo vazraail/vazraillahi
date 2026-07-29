@@ -2,21 +2,16 @@
         MENU HAMBURGER
 ==========================================*/
 
-const menuIcon = document.querySelector("#menu-icon");
-const navbar = document.querySelector(".navbar");
+menuIcon.addEventListener("click", () => {
 
-if (menuIcon && navbar) {
+    navbar.classList.toggle("active");
 
-    menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("fa-bars");
+    menuIcon.classList.toggle("fa-xmark");
 
-        navbar.classList.toggle("active");
+    document.querySelector(".home").classList.toggle("menu-open");
 
-        menuIcon.classList.toggle("fa-bars");
-        menuIcon.classList.toggle("fa-xmark");
-
-    });
-
-}
+});
 
 /*==========================================
         HEADER SHADOW

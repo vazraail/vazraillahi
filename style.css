@@ -276,7 +276,7 @@ section{
     color:#7C676B;
 }
 .home{
-    padding-top:120px;
+    padding-top:150px;
 }
 /* ==========================================================
    SOCIAL
@@ -2871,5 +2871,17 @@ img{
     font-weight:500;
 
     padding:5px 0;
+
+}
+
+@media (max-width:768px){
+
+    .home.menu-open{
+
+        margin-top:220px;
+
+        transition:.3s;
+
+    }
 
 }
