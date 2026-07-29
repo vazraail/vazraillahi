@@ -137,23 +137,43 @@ section{
    NAVBAR
 ========================================================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.navbar{
+    #menu-icon{
+        display:block;
+    }
 
-display:flex;
+    .navbar{
 
-position:static;
+        position:absolute;
+        top:100%;
+        right:5%;
 
-background:transparent;
+        width:220px;
 
-box-shadow:none;
+        background:#fff;
 
-padding:0;
+        border-radius:15px;
 
-gap:18px;
+        box-shadow:0 10px 30px rgba(0,0,0,.12);
 
-}
+        display:none;
+
+        flex-direction:column;
+
+        padding:20px;
+
+        gap:18px;
+
+        z-index:1000;
+
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+
 
 }
 
@@ -255,7 +275,9 @@ gap:18px;
     line-height:3rem;
     color:#7C676B;
 }
-
+.home{
+    padding-top:120px;
+}
 /* ==========================================================
    SOCIAL
 ========================================================== */

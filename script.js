@@ -274,3 +274,27 @@ document.getElementById("web").innerHTML=translate[lang].web;
     document.getElementById("btn-"+lang).classList.add("active");
 
 }
+
+const toggleBtn = document.getElementById("toggleCertificates");
+const hiddenCertificates = document.querySelectorAll(".moreCertificates");
+
+if (toggleBtn) {
+
+    let showAll = false;
+
+    toggleBtn.addEventListener("click", () => {
+
+        showAll = !showAll;
+
+        hiddenCertificates.forEach(card => {
+            card.style.display = showAll ? "block" : "none";
+        });
+
+        toggleBtn.innerHTML = showAll
+            ? 'Show Less <i class="fa-solid fa-chevron-up"></i>'
+            : 'View All Certificates <i class="fa-solid fa-chevron-down"></i>';
+
+    });
+
+}
+   
