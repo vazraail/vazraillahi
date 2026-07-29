@@ -683,21 +683,18 @@ html{
 }
 
 .timeline-item{
-    position:relative;
-    padding-left:55px;
-    margin-bottom:30px;
-}
-.circle{
-    position:absolute;
-    left:8px;
-    top:18px;
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    background:#E8A0BF;
-    border:5px solid #FFF8F2;
-}
 
+    position: relative;
+
+    padding-left: 0;
+
+    margin-bottom: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+}
 .content{
     width:100%;
     background:#fff;
@@ -2946,18 +2943,27 @@ img{
 
 }
 
+
 @media (max-width:768px){
 
-    .timeline{
-        padding-left:28px;
-    }
-
-    .timeline::before{
-        left:14px;
-    }
-
     .timeline-item{
-        margin-left:18px;
+
+        padding-left: 0;
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .content{
+
+        width: 100%;
+
+        margin: 0 auto;
+
+        padding: 25px;
+
     }
 
 }
