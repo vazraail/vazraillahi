@@ -460,16 +460,7 @@ section{
 .about-content{
     padding:35px;
 }
-.home{
-    position: relative;
-    z-index: 1;
-}
 
-#menu-icon{
-    position: relative;
-    z-index: 10001;
-    pointer-events: auto;
-}
 }
 
 @media(max-width:768px){
