@@ -118,6 +118,22 @@ section{
 
     z-index:1000;
 
+    #menu-icon{
+
+    display:none;
+
+    font-size:3rem;
+
+    color:#D97BA8;
+
+    cursor:pointer;
+
+    z-index:10001;
+
+    position:relative;
+
+}
+
 }
 /* ==========================================================
    LOGO
