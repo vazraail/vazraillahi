@@ -679,12 +679,7 @@ html{
 }
 
 .timeline::before{
-    content:"";
-    position:absolute;
-    left:5px;
-    width:4px;
-    height:100%;
-    background:#E8A0BF;
+    display:none;
 }
 
 .timeline-item{
